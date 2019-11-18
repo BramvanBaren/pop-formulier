@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <title>Formulier</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Bram van Baren">
+</head>
+
+<body lang="en">
+   
+    <form action="http://bla.hosts.ma-cloud.nl/pop.php" method="get">
+    <H1>Een plan voor jouw ontwikkeling</H1>
+    <p>Om een eerste stap te zetten naar een persoonlijk opleidingplan moet je eerst een paar vragen voor jezelf moeten beantwoorden. Dit formulier helpt daarbij.</p>
+    <p>Naam:</p> 
+    <input type="text" name="naam"> 
+
+    <select name="keuze">
+        <option value="">Kies je klas</option>
+        <option value="MD1A">MD1A</option>
+        <option value="MD1B">MD1B</option>
+        <option value="Game">Ik doe GD</option>
+        </select>
+
+   
+    <br>
+    <fieldset>
+    <p>Welbevinden:</p>
+    
+    <p>Hoe positief ben je op dit moment over je opleiding?</p>
+    
+    
+       <label><input type="radio" name="positief"  value="1">  1 </label>
+       <label><input type="radio" name="positief"  value="2">  2 </label>
+       <label><input type="radio" name="positief"  value="3">  3 </label>
+       <label><input type="radio" name="positief"  value="4">  4 </label>
+       <label><input type="radio" name="positief"  value="5">  5 </label>
+       <label><input type="radio" name="positief"  value="6">  6 </label>
+       <label><input type="radio" name="positief"  value="7">  7 </label>
+       <label><input type="radio" name="positief"  value="8">  8 </label>
+       <label><input type="radio" name="positief"  value="9">  9 </label>
+       <label><input type="radio" name="positief"  value="10"> 10</label>
+    
+    
+    <p>Hoe gemotiveerd ben je momenteel om de opleiding af te maken?</p>
+    
+
+     <label><input type="radio" name="Motivatie"  value="1">  1 </label>
+     <label><input type="radio" name="Motivatie"  value="2">  2 </label>
+     <label> <input type="radio" name="Motivatie"  value="3">  3 </label>
+     <label> <input type="radio" name="Motivatie"  value="4">  4 </label>
+     <label> <input type="radio" name="Motivatie"  value="5">  5 </label>
+     <label> <input type="radio" name="Motivatie"  value="6">  6 </label>
+     <label> <input type="radio" name="Motivatie"  value="7">  7 </label>
+     <label> <input type="radio" name="Motivatie"  value="8">  8 </label>
+     <label> <input type="radio" name="Motivatie"  value="9">  9 </label>
+     <label> <input type="radio" name="Motivatie"  value="10"> 10</label>
+    <br>
+    <p>vertrouwen heb je in je eigen kunnen?</p>
+    <br>
+
+    <label><input type="radio" name="Vertrouwen"  value="1">  1 </label>
+    <label><input type="radio" name="Vertrouwen"  value="2">  2 </label>
+    <label><input type="radio" name="Vertrouwen"  value="3">  3 </label>
+    <label><input type="radio" name="Vertrouwen"  value="4">  4 </label>
+    <label><input type="radio" name="Vertrouwen"  value="5">  5 </label>
+    <label><input type="radio" name="Vertrouwen"  value="6">  6 </label>
+    <label><input type="radio" name="Vertrouwen"  value="7">  7 </label>
+    <label><input type="radio" name="Vertrouwen"  value="8">  8 </label>
+    <label><input type="radio" name="Vertrouwen"  value="9">  9 </label>
+    <label><input type="radio" name="Vertrouwen"  value="10"> 10</label>
+    </fieldset>
+
+    <fieldset>
+        <p>Wat zijn jouw sterke punten?</p>
+        <label> <input type="checkbox" name="HTML" value="HTML"> Coderen in HTML/CSS</label>
+        <label> <input type="checkbox" name="JAVA" value="JAVA"> Coderen in JAVA</label>
+        <label> <input type="checkbox" name="Scripting" value="Scripting"> Scripting</label>
+        <label> <input type="checkbox" name="Planning" value="Planning"> Planning</label>
+        <label> <input type="checkbox" name="Samenwerken" value="Samenwerken"> Samenwerken</label>
+    </fieldset>
+
+    <fieldset>
+        <p>Wat kan je nog verbeteren?</p>
+        <label> <input type="checkbox" name="HTML" value="HTML"> Coderen in HTML/CSS</label>
+        <label> <input type="checkbox" name="JAVA" value="JAVA"> Coderen in JAVA</label>
+        <label> <input type="checkbox" name="Scripting" value="Scripting"> Scripting</label>
+        <label> <input type="checkbox" name="Planning" value="Planning"> Planning</label>
+        <label> <input type="checkbox" name="Samenwerken" value="Samenwerken"> Samenwerken</label>
+    </fieldset>
+
+    <p>Wat zijn jouw plannen voor de toekomst?</p>
+    <textarea name="Vul hier in" rows="10" cols="55"></textarea>
+
+    <input type="submit" value="Versturen" >
+
+  </form>
+</body>
+</html>
