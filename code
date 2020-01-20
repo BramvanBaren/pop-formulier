@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-  <title>Formulier</title> 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Bram van Baren">
-</head>
 
-<body lang="en">
+<head>
+    <title>validatie</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
    
     <form action="http://bla.hosts.ma-cloud.nl/pop.php" method="get">
     <H1>Een plan voor jouw ontwikkeling</H1>
@@ -24,7 +24,7 @@
 
    
     <br>
-    <fieldset>
+    <fieldset class="welbevinden">
     <p>Welbevinden:</p>
     
     <p>Hoe positief ben je op dit moment over je opleiding?</p>
@@ -45,8 +45,8 @@
     <p>Hoe gemotiveerd ben je momenteel om de opleiding af te maken?</p>
     
 
-     <label><input type="radio" name="Motivatie"  value="1">  1 </label>
-     <label><input type="radio" name="Motivatie"  value="2">  2 </label>
+     <label> <input type="radio" name="Motivatie"  value="1">  1 </label>
+     <label> <input type="radio" name="Motivatie"  value="2">  2 </label>
      <label> <input type="radio" name="Motivatie"  value="3">  3 </label>
      <label> <input type="radio" name="Motivatie"  value="4">  4 </label>
      <label> <input type="radio" name="Motivatie"  value="5">  5 </label>
@@ -73,20 +73,30 @@
 
     <fieldset>
         <p>Wat zijn jouw sterke punten?</p>
-        <label> <input type="checkbox" name="HTML" value="HTML"> Coderen in HTML/CSS</label>
-        <label> <input type="checkbox" name="JAVA" value="JAVA"> Coderen in JAVA</label>
-        <label> <input type="checkbox" name="Scripting" value="Scripting"> Scripting</label>
-        <label> <input type="checkbox" name="Planning" value="Planning"> Planning</label>
-        <label> <input type="checkbox" name="Samenwerken" value="Samenwerken"> Samenwerken</label>
+         <label for= "HTML"> Coderen in HTML/CSS</label>
+         <input type="checkbox" name="Sterke_Punten1" value="HTML">
+         <label for="JAVA">Coderen in JAVA</label>
+         <input type="checkbox" name="Sterke_Punten2" value="JAVA"> 
+         <label for="Scripting">Scripting</label>
+         <input type="checkbox" name="Sterke_Punten3" value="Scripting"> 
+         <label for="Planning">Planning</label>
+         <input type="checkbox" name="Sterke_Punten4" value="Planning"> 
+         <label for="Samenwerken">Samenwerken</label>
+         <input type="checkbox" name="Sterke_Punten5" value="Samenwerken"> 
     </fieldset>
 
     <fieldset>
         <p>Wat kan je nog verbeteren?</p>
-        <label> <input type="checkbox" name="HTML" value="HTML"> Coderen in HTML/CSS</label>
-        <label> <input type="checkbox" name="JAVA" value="JAVA"> Coderen in JAVA</label>
-        <label> <input type="checkbox" name="Scripting" value="Scripting"> Scripting</label>
-        <label> <input type="checkbox" name="Planning" value="Planning"> Planning</label>
-        <label> <input type="checkbox" name="Samenwerken" value="Samenwerken"> Samenwerken</label>
+        <label for="HTML.">Coderen in HTML/CSS</label>
+        <input type="checkbox" name="Zwakke_Punten1" value="HTML."> 
+        <label for="JAVA.">Coderen in JAVA</label>
+        <input type="checkbox" name="Zwakke_Punten2" value="JAVA.">
+        <label for="Scripting.">Scripting</label>
+        <input type="checkbox" name="Zwakke_Punten3" value="Scripting.">
+        <label for="Planning.">Planning</label>
+        <input type="checkbox" name="Zwakke_Punten4" value="Planning.">
+        <label for="Samenwerken.">Samenwerken</label>
+        <input type="checkbox" name="Zwakke_Punten5" value="Samenwerken.">
     </fieldset>
 
     <p>Wat zijn jouw plannen voor de toekomst?</p>
@@ -95,5 +105,18 @@
     <input type="submit" value="Versturen" >
 
   </form>
+
+
+
+    <footer>
+        <div id="validatie">
+            <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+                <img src="http://blog.boyet.com/blog/files/media/image/valid-html5-blue.png" alt="Valide HTML5"></a>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+                <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+            </a>
+        </div>
+    </footer>
 </body>
+
 </html>
